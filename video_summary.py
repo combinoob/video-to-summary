@@ -58,7 +58,7 @@ transcription = client.audio.transcriptions.create(
 response = client.chat.completions.create(
     model=MODEL,
     messages=[
-      {"role":"system","content":"""You are generating summary from a video. Give a detailed summary of the video based on the provided visuals and its transcript."""},
+      {"role":"system","content":"""You are generating summary from a video. Give a detailed summary of the video based on the provided frames of the video and its transcript."""},
       {"role":"user","content":[
           "These are the frames from the video.",
           *map(lambda x:{"type":"image_url",
