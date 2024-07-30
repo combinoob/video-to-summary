@@ -12,7 +12,7 @@ load_dotenv()
 MODEL="gpt-4o"
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-VIDEO_PATH = "recording.mp4"
+VIDEO_PATH = "video.mp4"
 
 def process_video(video_path, seconds_per_frame=2):
     base64Frames = []
